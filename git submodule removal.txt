@@ -1,6 +1,0 @@
-git submodule deinit -f -- D:\Git_Local\Learning-Practice\Devops_PK
-
-ls D:\Git_Local\Learning-Practice\SSMS_Practice
-ls D:\Git_Local\Learning-Practice\Devops_PK
-
-
