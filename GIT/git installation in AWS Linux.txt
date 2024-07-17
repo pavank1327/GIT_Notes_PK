@@ -1,0 +1,272 @@
+-- git installation in AWS Linux instance
+
+yum intall git -y
+
+git init.     -- initializing empty repo
+
+
+-- root user
+
+touch filename(f1) -- creating file
+
+git add f1
+
+git status
+
+git commit -m "file1"
+
+git log -- log details
+
+
+-- --------------------------------------------------------------------------------------------------------------------------
+
+git config user.name "pavank"
+
+git config user.email "pavankumachr7777@gmail.com"
+
+-- user pavank
+
+touch filename(f2) -- creating file
+
+git add f2
+
+git status
+
+git commit -m "file2"
+
+git log -- log details  (file committed in pavank -- user)
+
+-- --------------------------------------------------------------------------------------------------------------------------
+
+
+-- creating multiple files at same time 
+
+
+touch file{1..4}
+
+-- create files as  (file1,file2,file3,file4)
+
+git status
+
+git add .
+
+git status
+
+
+-- --------------------------------------------------------------------------------------------------------------------------
+
+-- restoring a file status(changing file from committed to staged)
+
+git restore --staged .filename   (f1 or f2)
+
+git status
+
+-- file staged
+
+-- --------------------------------------------------------------------------------------------------------------------------
+
+-- restore all files
+
+git restore --staged .  
+
+touch file{1..4}
+
+git add file*   -- all files are added
+
+git status
+
+git commit -m "for all file"
+
+
+
+-- --------------------------------------------------------------------------------------------------------------------------
+
+
+-- git ignore
+
+
+ls
+
+ls -al           -- shows hidden files also
+
+
+-- add unused files in git ignore
+
+
+vi gitignore  (opens editor)
+
+give file to ignore  
+
+ex: all file as  
+
+insert command: files*  
+
+git status   -- now the files are not showing in the list
+
+
+-- --------------------------------------------------------------------------------------------------------------------------
+
+give specified files to ignore  
+
+ex: file as  
+
+insert command: files3  file4
+
+git status   -- now the specified files are not showing in the list
+
+
+-- --------------------------------------------------------------------------------------------------------------------------
+
+-- branch commands
+
+git branch
+
+rm -rf *  -- all files removed
+
+ll -- check files
+
+git log  -- gives all logs upto now
+
+git branch branch_name
+
+git branch
+
+git checkout branch_name
+
+git branch 		--switched to branch_name
+
+
+touch file{1..3}
+
+git add file*  -- adds all files
+
+git commit -m  "branch_name*" file*    -- all files are commited
+
+ll     -- added files list 
+
+git log
+
+git commit -m  "branch_name*" file1  file2   -- specified files are commited
+
+ll     -- added files list 
+
+git log
+
+
+git checkout -b branch_name   -- directly created and switched to new branch
+
+
+git status
+
+
+git restore --staged file* -- can restore all the files
+
+
+ll
+
+git status
+
+git branch -m oldname newname
+
+git branch -d branch_name
+
+git branch
+
+
+-- set password in developer settings (token) to access git repo in Linux instance -- token like the access policy to give required permissions
+
+
+-- ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- git initialization
+
+git init .
+
+git branch
+
+git remote add repo_name
+
+git branch
+
+touch file{1..3}
+
+git add file* 
+
+git push origin main
+
+git checkout branch_name
+
+git merge branch_name
+
+
+
+
+
+-- branch commands
+
+
+git branch
+
+git branch branch_name
+
+git checkout branch_name
+
+git checkout -b branch_name
+
+git branch -m oldname newname   -- rename branch
+
+git branch -d branch_name
+
+git branch
+
+
+
+git clone repo_url
+
+git pull origin branch_name
+
+ll  -- check files
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
